@@ -1,0 +1,29 @@
+<aside>
+    <section id="sidebar-me">
+        <h1>HI THERE!</h1>
+        <img src="/img/bioimage.png" />
+        <p>I'm a Graphic Designer from Sydney, Australia who just loves to sew.</p>
+        <p>Bernie is my Bernina sewing machine of 13+ years. We have created lots of very fabulous things together.</p>
+    </section>
+    <section id="sidebar-social">
+        <h1>I'M ALSO ON...</h1>
+        <p>
+          <a class="icon-instagram" href="https://www.instagram.com/kathborup/"></a>
+          <a class="icon-pinterest" href=""></a>
+          <a class="icon-burdastyle" href=""></a>
+          <a class="icon-kollabora" href=""></a>
+        </p>
+    </section>
+    <section id="sidebar-follow">
+        <h1>FOLLOW BERNIE &amp; I</h1>
+        <ul>
+          {{ if .RSSlink }}
+          <li class="follow-rss"><a href="{{ .RSSlink }}" type="application/rss+xml" class="icon-rss" target="_blank">RSS</a></li>
+          <li class="follow-feedly"><a href="http://feedly.com/#subscription%2Ffeed%2F{{ .RSSlink}}" class="icon-feedly" target="_blank">feedly</a></li>
+          {{ end }}
+        </ul>
+    </section>
+    <section id="sidebar-search">
+      <input type="text" placeholder="seach posts..." /><button>GO!</button>
+    </section>
+</aside>

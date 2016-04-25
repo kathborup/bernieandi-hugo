@@ -1,0 +1,15 @@
+<header>
+    <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+    <nav>
+        <ul>
+          {{ $currentNode := . }}
+          {{ range .Site.Menus.main }}
+          <li><a class="sidebar-nav-item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a></li>
+            <!--<li><a href="#">about</a></li>-->
+            <!--<li><a href="#">my handmade closet</a></li>-->
+            <!--<li><a href="#">links</a></li>-->
+            <!--<li><a href="#">archive</a></li>-->
+          {{ end }}
+        </ul>
+    </nav>
+</header>

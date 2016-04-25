@@ -1,0 +1,421 @@
+@font-face {
+    font-family: 'Glyphter';
+    src: url('/fonts/Glyphter.eot');
+    src: url('/fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Glyphter.woff') format('woff'),
+         url('/fonts/Glyphter.ttf') format('truetype'),
+         url('/fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  padding-left:1.3em; list-style: initial;
+}
+
+/* line 26, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+
+.icon-bernieandi:before{content:'\0041';}
+.icon-burdastyle:before{content:'\0042';}
+.icon-rss:before{content:'\0043';}
+.icon-pinterest:before{content:'\0044';}
+.icon-kollabora:before{content:'\0045';}
+.icon-instagram:before{content:'\0046';}
+.icon-followplus:before{content:'\0047';}
+.icon-feedly:before{content:'\0048';}
+.icon-facebook:before{content:'\0049';}
+.icon-twitter:before{content:'\004c';}
+
+/* line 13, ../sass/screen.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #3f3c3d;
+  color: #666;
+  background: url("/img/bg.png") 50% 50% repeat;
+  line-height: 1.6;
+}
+
+/* line 20, ../sass/screen.scss */
+p {
+  padding-bottom: 1.6em;
+}
+
+/* line 21, ../sass/screen.scss */
+a {
+  color: #f36713;
+  text-decoration: none;
+}
+a:hover {
+  color:#e15d0d;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 1em 0;
+  font-weight: bold;
+}
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1.1em; }
+h4 { font-size: 1.0em; }
+h5 { font-size: 0.9em; }
+
+/* line 23, ../sass/screen.scss */
+body > header {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background: url("/img/headerimage.png") 50% 50% no-repeat;
+  z-index: 300;
+}
+/* line 24, ../sass/screen.scss */
+body > header h1 {
+  position: relative;
+  top: 128px;
+  height: 221px;
+  width: 221px;
+  margin: 0 auto;
+  overflow: hidden;
+  opacity: .9;
+  background-image: url("/img/bernieandilogo.png");
+  text-indent: 100%;
+  white-space: nowrap;
+}
+body > header h1 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 25, ../sass/screen.scss */
+body > header > nav {
+  width: 100%;
+  position: absolute;
+  top: 386px;
+  border-top: 10px solid rgba(243, 103, 19, 0.5);
+  border-bottom: 10px solid rgba(243, 103, 19, 0.5);
+  font-size: 14px;
+  text-align: center;
+}
+/* line 26, ../sass/screen.scss */
+body > header > nav ul {
+  padding: 8px 0;
+  background-color: #f36713;
+}
+/* line 27, ../sass/screen.scss */
+body > header > nav li {
+  display: inline-block;
+  padding-left: 35px;
+}
+/* line 27, ../sass/screen.scss */
+body > header > nav li:first-child {
+  padding-left: 0;
+}
+/* line 28, ../sass/screen.scss */
+body > header > nav a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body > header > nav a:hover {
+  color: white;
+  opacity:0.5;
+}
+
+/* line 32, ../sass/screen.scss */
+div#content {
+  position: relative;
+  width: 1075px;
+  margin: -50px auto 0;
+  padding: 0;
+  /*background-color: white;*/
+  z-index: 200;
+}
+/* line 33, ../sass/screen.scss */
+div#content::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 0;
+  line-height: 1px;
+  clear: both;
+}
+/* line 34, ../sass/screen.scss */
+div#content main {
+  width: 100%;
+  max-width: 780px;
+  padding: 60px 30px 60px 50px;
+  background-color: white;
+  float: left;
+}
+/* line 36, ../sass/screen.scss */
+div#content main > article header {
+  padding-top: 1.6em;
+  padding-bottom: 2em;
+}
+/* line 37, ../sass/screen.scss */
+div#content main > article header h1 {
+  display: inline;
+  font-size: 1.2em;
+  color: #f36713;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+div#content main > article header span.post-date {
+  display:inline-block; padding-right:5px; font-size:1.1em;
+}
+/* line 39, ../sass/screen.scss */
+div#content main > article footer ul {
+  padding: 40px 0 1em 0;
+  color: #f36713;
+  text-align: right;
+}
+/* line 40, ../sass/screen.scss */
+div#content main > article footer ul li {
+  display: inline;
+}
+/* line 41, ../sass/screen.scss */
+div#content main > article footer ul li.comments {
+  float: left;
+  line-height:2.8;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 42, ../sass/screen.scss */
+div#content main > article footer ul li.comment {
+  font-weight: bold;
+}
+/* line 43, ../sass/screen.scss */
+div#content main > article footer ul li.share-via {
+  padding-right: 2px;
+  font-style: italic;
+}
+div#content main > article footer .share-icon {
+  position: relative;
+  top: 0.25em;
+  font-size:1.5em;
+  cursor:pointer;
+}
+
+/* line 46, ../sass/screen.scss */
+div#content main > article::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background: url("/img/bg.png") 50% 50% repeat;
+}
+/* line 49, ../sass/screen.scss */
+div#content > aside {
+  float: left;
+  width: 295px;
+  /*margin-left: 60px;*/
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+/* line 50, ../sass/screen.scss */
+div#content > aside h1 {
+  padding-top:1.35em;
+  color: #f36713;
+  font-size:1.2em;
+  font-weight: bold;
+}
+/* line 51, ../sass/screen.scss */
+div#content > aside > section {
+  padding:0 40px 1em;
+  background-color:white;
+}
+
+div#content > aside > section:first-child {
+  padding-top:60px;
+}
+
+#sidebar-me h1 {
+  padding-bottom: 0;
+}
+
+/* line 56, ../sass/screen.scss */
+#sidebar-me img {
+  margin: 0.8em auto;
+}
+/* line 57, ../sass/screen.scss */
+#sidebar-me p {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #666;
+  line-height: 1.4;
+  padding-bottom: 10px;
+}
+
+#sidebar-social h1 {
+  padding-bottom:0;
+}
+
+#sidebar-social p {
+  font-size:1.8em;
+}
+
+div#content > aside > section#sidebar-follow,
+div#content > aside > section#sidebar-search {
+  background:transparent;
+}
+
+#content #sidebar-follow { padding-bottom:140px; }
+#content #sidebar-follow h1 { color:#3f3c3d; }
+#sidebar-follow ul {
+  padding-left:0;
+  list-style: none;
+}
+#sidebar-follow li a {
+  display:block;
+  width:100%;
+  background-color:white;
+  padding: 0.3em 1em;
+  margin-bottom:0.5em;
+  font-weight:bold;
+  text-align:left;
+}
+#sidebar-follow li a:hover {
+  color:white;
+  background-color:#f36713;
+}
+
+#sidebar-follow li a::before {
+  font-size: 1.2em;
+  position: relative;
+  top: 4px;
+  padding-right: 0.4em;
+}
+
+div#content > aside > section#sidebar-follow {
+  background:url('/img/follow-bernie-and-i-no-bg.png') 50% 100% no-repeat;
+}
+
+div#content > aside > section#sidebar-search { padding:40px 40px 10000000em; background-color:white; }
+
+div#content > aside input { padding:0.5em 0.8em; max-width:155px; border:none; outline:none; color:white; font-size:1em; font-weight:bold; background-color:#e15d0d; }
+div#content > aside input::-webkit-input-placeholder { color:white; }
+div#content > aside input:-moz-placeholder { color:white; }
+div#content > aside input::-moz-placeholder { color:white; }
+div#content > aside input:-ms-input-placeholder { color:white; }
+div#content > aside button { padding:0.5em 0.8em; border:none; font-size:1em; color:white; font-weight:bold; background-color:#f36713; }
+
+/* line 60, ../sass/screen.scss */
+body > footer {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  margin-top: -8px;
+  color: white;
+  text-align: center;
+  background-color: #f36713;
+  border-top: 20px solid #f4772b;
+  z-index: 100;
+}
+/* line 61, ../sass/screen.scss */
+body > footer a {
+  display: block;
+  width: 150px;
+  /*height: 100px;*/
+  margin: 0 auto 2em;
+  padding-top: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+body > footer a i { display:block; font-size:55px; line-height:1; }
+/* line 62, ../sass/screen.scss */
+body > footer a span::before, body > footer a span::after {
+  content: "\25B2";
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  padding: 0 5px;
+}
