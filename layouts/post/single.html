@@ -9,7 +9,7 @@
   {{ partial "header.html" . }}
 
   <div id="content">
-    <main id="article-list">
+    <main id="single-article">
       <article>
         <header>
           <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
@@ -44,6 +44,7 @@
         <a class="btn next " href="{{.Next.Permalink}}"> Next</a> {{ end }}
       </div>
     </main>
+    {{ partial "sidebar.html" . }}
   </div>
   {{ partial "footer.html" . }}
   {{ with .Site.Params.AnalyticsID }}{{ partial "analytics.html" . }}{{ end }}

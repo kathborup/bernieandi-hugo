@@ -15,11 +15,11 @@ copyright = "Kathrine Borup"
     identifier = "about"
     url = "/about"
 
-[[menu.main]]
-    name = "my handmade closet"
-    weight = 2
-    identifier = "closet"
-    url = "/closet"
+#[[menu.main]]
+#    name = "my handmade closet"
+#    weight = 2
+#    identifier = "closet"
+#    url = "/closet"
 
 [[menu.main]]
     name = "links"
@@ -27,8 +27,8 @@ copyright = "Kathrine Borup"
     identifier = "links"
     url = "/links"
 
-[[menu.main]]
-    name = "archive"
-    weight = 4
-    identifier = "archive"
-    url = "/archive"
+#[[menu.main]]
+#    name = "archive"
+#    weight = 4
+#    identifier = "archive"
+#    url = "/archive"

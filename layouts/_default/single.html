@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  {{ partial "header.html" . }}
+
+  <div id="content">
+    <main id="page">
+      <article>
+        <header>
+          <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        </header>
+
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </article>
+    </main>
+  </div>
+  {{ partial "footer.html" . }}
+  {{ with .Site.Params.AnalyticsID }}{{ partial "analytics.html" . }}{{ end }}
+
+</body>
+
+</html>

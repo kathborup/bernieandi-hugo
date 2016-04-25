@@ -9,21 +9,22 @@
         <h1>I'M ALSO ON...</h1>
         <p>
           <a class="icon-instagram" href="https://www.instagram.com/kathborup/"></a>
-          <a class="icon-pinterest" href=""></a>
-          <a class="icon-burdastyle" href=""></a>
-          <a class="icon-kollabora" href=""></a>
+          <a class="icon-pinterest" href="https://www.pinterest.com/kathborup/"></a>
+          <!--<a class="icon-burdastyle" href=""></a>-->
+          <!--<a class="icon-kollabora" href=""></a>-->
         </p>
     </section>
     <section id="sidebar-follow">
         <h1>FOLLOW BERNIE &amp; I</h1>
         <ul>
-          {{ if .RSSlink }}
-          <li class="follow-rss"><a href="{{ .RSSlink }}" type="application/rss+xml" class="icon-rss" target="_blank">RSS</a></li>
-          <li class="follow-feedly"><a href="http://feedly.com/#subscription%2Ffeed%2F{{ .RSSlink}}" class="icon-feedly" target="_blank">feedly</a></li>
-          {{ end }}
+          <li class="follow-rss"><a href="/index.xml" type="application/rss+xml" class="icon-rss" target="_blank">RSS</a></li>
+          <li class="follow-feedly"><a href="http://feedly.com/#subscription%2Ffeed%2F{{ .Site.BaseURL }}index.xml" class="icon-feedly" target="_blank">feedly</a></li>
         </ul>
     </section>
     <section id="sidebar-search">
-      <input type="text" placeholder="seach posts..." /><button>GO!</button>
+        <form action="https://google.com" method="GET">
+            <input type="hidden" name="q" value="site:{{.Site.BaseURL}}" />
+            <input type="text" name="q" placeholder="search posts..." /><button type="submit">GO!</button>
+        </form>
     </section>
 </aside>

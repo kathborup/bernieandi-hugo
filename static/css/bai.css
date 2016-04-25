@@ -220,12 +220,24 @@ div#content::after {
 }
 /* line 34, ../sass/screen.scss */
 div#content main {
+  position:relative;
   width: 100%;
   max-width: 780px;
   padding: 60px 30px 60px 50px;
   background-color: white;
   float: left;
 }
+div#content main#page {
+  max-width:100%;
+  padding-left:450px;
+}
+div#content main#page article img:first-of-type {
+  position:absolute;
+  left:50px;
+  top:100px;
+  max-width:400px;
+}
+
 /* line 36, ../sass/screen.scss */
 div#content main > article header {
   padding-top: 1.6em;
