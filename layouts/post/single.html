@@ -12,10 +12,9 @@
     <main id="single-article">
       <article>
         <header>
+          <span class="post-date">{{ .Date.Format "2 Jan, 2006" }}</span>
           <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
         </header>
-
-        <span class="post-date">{{ .Date.Format "2 Jan, 2006" }}</span>
 
         {{ if .Params.tags }}
 	      <span class="post-tags">
@@ -30,12 +29,7 @@
         </div>
 
         <footer>
-          <ul>
-            <li class="share-via">share via</li>
-            <li class="share-via-twitter"><a href="javascript:;">twitter</a></li>
-            <li class="share-via-pinterest"><a href="javascript:;">pinterest</a></li>
-            <li class="share-via-facebook"><a href="javascript:;">facebook</a></li>
-          </ul>
+          {{ partial "share-links.html" . }}
           {{ partial "comments.html" . }}
         </footer>
       </article>
