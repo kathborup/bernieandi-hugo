@@ -1,6 +1,5 @@
 +++
-date = "2016-05-03T21:01:00+10:00"
-draft = true
+date = "2016-05-15T21:01:00+10:00"
 title = "the virtues of sewing"
 
 +++
