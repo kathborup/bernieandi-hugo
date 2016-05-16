@@ -6,7 +6,7 @@ title = "about"
 
 ![links image](/img/berneiandi-aboutme.png)
 
-## I'm also on...
+## A bit more about me
 
 My name is Kathrine and I have been a sewing fanatic since I was a teenager. My other passions include: designing, drawing & watching films. 
  
